@@ -1,0 +1,44 @@
+\documentclass[11pt]{article}
+\usepackage{setspace}
+\usepackage[letterpaper,top=1in,bottom=1in,left=1.25in,right=1.25in]{geometry}
+\usepackage[parfill]{parskip}
+
+
+
+\title{Creating Dependable Software}
+\author{Devin Hudson}
+\date{27 January 2019}
+
+\begin{document}
+\maketitle
+
+\thispagestyle{empty}
+
+\begin{doublespace}
+  \section{Introduction}
+
+   How is dependable software defined? Daniel Jackson suggests a very simple answer: a dependable system is one that a user can put their trust in\cite{jackson2009}. To achieve this trust, developers must provide direct evidence of their system being dependable. As the years go by, society is becoming more reliant on software to complete tasks. Advances in software have shown amazing benefits to the efficiency of our systems. On the opposite side of the spectrum, with such a dependence on software, a faulty system can lead to devastating failures. For this reason developers must devise systems that are dependable. 
+
+  \section{Background}
+
+  Jackson makes a powerful statement ``software can save lives but also kill''\cite{jackson2009}. For large software systems in which their functionality involves human life, dependability is paramount. For example, aviation software that is designed to keep a plane in the air must be dependable or many lives will be endangered\cite{beck124}. There is no method, however, to completely determine the cause of all software errors. This is a result of failures being masked by producers and rarely reported. Jackson also believes testing isn't enough to determine if a system is dependable\cite{jackson2009}. To obtain high enough confidence that a system is dependable would require thousands of tests even on small systems. Therefore in larger systems it is not feasible to think developers can test for every possible situation. Jackson suggests a direct approach to best tackle the question of dependability. His approach is straightforward but addresses all of the critical properties of a desired system. The direct approach demands that developers explicitly state how their system is dependable.
+
+  \section{Analysis (Essay Prompts)}
+  
+  Jackson argues that the concept of a dependable system is hard to make a reality. Therefore if a developer claims their system is dependable, there should be very good reasoning. Establishing critical properties allows for more clarity in the systems purpose and flexibility as the environment changes unlike a traditional process which would be more likely to produce an outdate system. These properties are what make the system dependable in the eyes of the developer and gives them freedom to devise efficient and cost effective ways to achieve the properties.
+  
+  Although Jackson believes that software processes are inferior to the direct approach, he would still believe it to be important to study these processes. Taking the information from a process whether it was successful or a failure is valuable to a developer trying to achieve a critical property. The lack of knowledge of failures in software development is one of Jackson's biggest arguments on why dependable software is such a difficult concept to achieve\cite{jackson2009}. Therefore it would be contradictory to assume that he would believe studying processes is a waste.
+  
+  If Jackson had to respond to Denning's 2008 article he would like the idea of a system that can evolve along with the critical properties of the developers\cite{denning2008}. Prototyping is also an idea that can help with creating a more dependable system. Multiple versions of a system that can be tested by clients provides a strong argument for a developer to claim dependability. Jackson may argue that the evolutionary system is only feasible in situations where it is okay for the software to not completely function on its first use\cite{beck124}. It would be immoral to test out a software that may not work on a plane carrying humans. That is where their ideologies differ the most but beyond that many of Jackson's ideas translate to Denning's evolutionary model.
+
+  \section{Conclusion}
+ 
+ When a client uses software, they want it to work correctly because they paid for it and they may be relying on its functionality for their well being. They are depending on the software and it is up to developers to ensure that the software is dependable. There are many complex ideas on how to achieve this but Jackson simplifies it with his direct approach. By identifying the most important properties of a system, developers can create a flexible outline for the system. This flexibility allows the direct approach to be compatible with evolutionary development. A complex process won't withstand a dynamic environment. With the direct approach a developer can develop their own sense of dependability which is the closest thing to 100\% dependability which is only achievable in a perfect world scenario.
+  
+
+\end{doublespace}
+
+\bibliographystyle{abbrv}
+\bibliography{denning.bib}
+
+\end{document}
